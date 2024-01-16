@@ -4,9 +4,13 @@ select = (e) => document.querySelector(e);
 selectAll = (e) => document.querySelectorAll(e);
 
 const container = select(".container");
-const cuboid = selectAll(".hi__cuboid");
+const cuboid = selectAll(
+  ".hi__cuboid, .info__cuboid, .portfolio__cuboid, .contact__cuboid"
+);
 const hiWords = selectAll(".hi__word");
-const base = select(".hi__base-plate");
+const base = select(
+  ".hi__base-plate, .info__base-plate, .portfolio__base-plate, .contact__base-plate"
+);
 let winW = 0;
 let winH = 0;
 let pointer = {
@@ -121,3 +125,14 @@ window.onload = () => {
 };
 
 window.onresize = setWinDimensions;
+
+$(document).ready(function () {
+  $("#fullpage").fullpage({
+    //options here
+    licenseKey: "OPEN-SOURCE-GPLV3-LICENSE",
+    autoScrolling: true,
+    responsiveWidth: 1024,
+    scrollHorizontally: true,
+    fitToSection: true,
+  });
+});
