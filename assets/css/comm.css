@@ -68,17 +68,13 @@ body::-webkit-scrollbar {
   transform-style: preserve-3d;
 }
 
-.info {
+.info,
+.contact {
   bottom: 28%;
   font-size: 400%;
 }
 
 .portfolio {
-  bottom: 33%;
-  font-size: 400%;
-}
-
-.contact {
   bottom: 33%;
   font-size: 400%;
 }
@@ -127,45 +123,53 @@ body::-webkit-scrollbar {
   transform: translateY(calc(70px - 70px / 2)) rotateX(-90deg);
 }
 
-.info__cuboid {
+.info__cuboid,
+.contact__cuboid {
   position: relative;
   width: 500px;
   height: 60px;
   transform-style: preserve-3d;
   margin: 30px 0;
 }
-.info__cuboid .face {
+.info__cuboid .face,
+.contact__cuboid .face {
   position: absolute;
   left: 0;
   top: 0;
   background-color: black;
 }
-.info__cuboid .face--front {
+.info__cuboid .face--front,
+.contact__cuboid .face--front {
   width: 500px;
   height: 60px;
   transform: translateZ(calc(60px / 2));
 }
-.info__cuboid .face--back {
+.info__cuboid .face--back,
+.contact__cuboid .face--back {
   width: 500px;
   height: 60px;
   transform: translateZ(calc(60px / 2 * -1)) rotateY(180deg) rotate(180deg);
 }
-.info__cuboid .face--left {
+.info__cuboid .face--left,
+.contact__cuboid .face--left {
   width: 60px;
   height: 60px;
   transform: translateX(calc(60px / 2 * -1)) rotateY(-90deg);
 }
-.info__cuboid .face--right {
+.info__cuboid .face--right,
+.contact__cuboid .face--right {
   width: 60px;
   height: 60px;
   transform: translateX(calc(500px - 60px / 2)) rotateY(90deg);
 }
-.info__cuboid .face--top {
+.info__cuboid .face--top,
+.contact__cuboid .face--top {
   width: 500px;
   height: 60px;
   transform: translateY(calc(60px / 2 * -1)) rotateX(90deg);
 }
-.info__cuboid .face--bottom {
+.info__cuboid .face--bottom,
+.contact__cuboid .face--bottom {
   width: 500px;
   height: 60px;
   transform: translateY(calc(60px - 60px / 2)) rotateX(-90deg);
@@ -215,50 +219,6 @@ body::-webkit-scrollbar {
   transform: translateY(calc(60px - 60px / 2)) rotateX(-90deg);
 }
 
-.contact__cuboid {
-  position: relative;
-  width: 500px;
-  height: 60px;
-  transform-style: preserve-3d;
-  margin: 30px 0;
-}
-.contact__cuboid .face {
-  position: absolute;
-  left: 0;
-  top: 0;
-  background-color: black;
-}
-.contact__cuboid .face--front {
-  width: 500px;
-  height: 60px;
-  transform: translateZ(calc(60px / 2));
-}
-.contact__cuboid .face--back {
-  width: 500px;
-  height: 60px;
-  transform: translateZ(calc(60px / 2 * -1)) rotateY(180deg) rotate(180deg);
-}
-.contact__cuboid .face--left {
-  width: 60px;
-  height: 60px;
-  transform: translateX(calc(60px / 2 * -1)) rotateY(-90deg);
-}
-.contact__cuboid .face--right {
-  width: 60px;
-  height: 60px;
-  transform: translateX(calc(500px - 60px / 2)) rotateY(90deg);
-}
-.contact__cuboid .face--top {
-  width: 500px;
-  height: 60px;
-  transform: translateY(calc(60px / 2 * -1)) rotateX(90deg);
-}
-.contact__cuboid .face--bottom {
-  width: 500px;
-  height: 60px;
-  transform: translateY(calc(60px - 60px / 2)) rotateX(-90deg);
-}
-
 .face {
   display: flex;
   align-items: center;
@@ -288,7 +248,8 @@ body::-webkit-scrollbar {
   height: 250px;
 }
 
-.info__base {
+.info__base,
+.contact__base {
   position: absolute;
   width: 950px;
   height: 550px;
@@ -297,12 +258,6 @@ body::-webkit-scrollbar {
 .portfolio__base {
   position: absolute;
   width: 1350px;
-  height: 650px;
-}
-
-.contact__base {
-  position: absolute;
-  width: 1050px;
   height: 650px;
 }
 
@@ -501,8 +456,25 @@ body::-webkit-scrollbar {
   height: 200px;
 }
 
-.fa-paper-plane {
-  content: "\f1d8";
+.contact__1depth {
+  position: absolute;
+  font-size: 25px;
+  top: 25%;
+  left: 26.5%;
+}
+.contact__1depth li {
+  margin-bottom: 30px;
+  font-family: "Pretendard";
+}
+.contact__1depth li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.contact__base-plate span {
+  position: absolute;
+  top: 93%;
+  left: 39%;
 }
 
 .collection {

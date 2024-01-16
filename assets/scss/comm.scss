@@ -125,7 +125,8 @@ body::-webkit-scrollbar {
   transform-style: preserve-3d;
 }
 
-.info {
+.info,
+.contact {
   bottom: 28%;
   font-size: 400%;
 }
@@ -135,28 +136,19 @@ body::-webkit-scrollbar {
   font-size: 400%;
 }
 
-.contact {
-  bottom: 33%;
-  font-size: 400%;
-}
-
 .hi__cuboid {
   @include cuboid(500px, 70px, 70px, black);
   margin: 30px 0;
 }
 
-.info__cuboid {
+.info__cuboid,
+.contact__cuboid {
   @include cuboid(500px, 60px, 60px, black);
   margin: 30px 0;
 }
 
 .portfolio__cuboid {
   @include cuboid(600px, 60px, 60px, black);
-  margin: 30px 0;
-}
-
-.contact__cuboid {
-  @include cuboid(500px, 60px, 60px, black);
   margin: 30px 0;
 }
 
@@ -190,7 +182,8 @@ body::-webkit-scrollbar {
   height: 250px;
 }
 
-.info__base {
+.info__base,
+.contact__base {
   position: absolute;
   width: 950px;
   height: 550px;
@@ -199,12 +192,6 @@ body::-webkit-scrollbar {
 .portfolio__base {
   position: absolute;
   width: 1350px;
-  height: 650px;
-}
-
-.contact__base {
-  position: absolute;
-  width: 1050px;
   height: 650px;
 }
 
@@ -407,8 +394,27 @@ body::-webkit-scrollbar {
   }
 }
 
-.fa-paper-plane {
-  content: "\f1d8";
+.contact__1depth {
+  position: absolute;
+  font-size: 25px;
+  top: 25%;
+  left: 26.5%;
+  li {
+    margin-bottom: 30px;
+    font-family: "Pretendard";
+    a {
+      text-decoration: none;
+      color: #fff;
+    }
+  }
+}
+
+.contact__base-plate {
+  span {
+    position: absolute;
+    top: 93%;
+    left: 39%;
+  }
 }
 
 .collection {
